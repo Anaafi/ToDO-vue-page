@@ -17,7 +17,7 @@ export const useCounterStore = defineStore('counter', () => {
     if(editedTask.value === null){
       todoList.value.push({
       task: newTask.value,
-      status: "to-do",
+      
     });
     } else{
       todoList.value[editedTask.value].task = newTask.value;
